@@ -1,0 +1,3 @@
+const RESERVATION_DURATION_MS = 10 * 60 * 1000;
+
+module.exports = { RESERVATION_DURATION_MS };

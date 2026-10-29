@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7f2;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+}
+
+.navbar h1 {
+  font-size: 25px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #e8f5e9;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 350px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-box button,
+.view-btn,
+.product-box button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+.search-box button:hover,
+.view-btn:hover,
+.product-box button:hover {
+  background: #1b5e20;
+}
+
+/* Dairy Section */
+
+.dairy-section {
+  padding: 50px 8%;
+}
+
+.dairy-section h2 {
+  margin-bottom: 25px;
+}
+
+.dairy-card {
+  background: white;
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dairy-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.products {
+  margin: 20px 0;
+}
+
+.products p {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.products span {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* Dairy Details */
+
+.details-section {
+  padding: 50px 8%;
+  background: white;
+}
+
+.details-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.details-section h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.product-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+}
+
+.product-box div {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9fff9;
+}
+
+.product-box h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.product-box button {
+  margin-top: 15px;
+}
+
+.reserved {
+  margin-top: 15px;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box input {
+    width: 90%;
+  }
+
+  .product-box {
+    grid-template-columns: 1fr;
+  }
+}
